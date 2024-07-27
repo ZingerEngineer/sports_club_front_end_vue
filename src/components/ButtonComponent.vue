@@ -1,12 +1,12 @@
 <template>
   <div
-    class="button-wrapper px-2 py-3 flex flex-row items-center bg-purple-500"
+    class="button-wrapper max-w-60 px-4 py-2 flex flex-row items-center justify-center rounded-md border-solid border-2 border-purple-200 bg-purple-500"
   >
     <font-awesome-icon
-      class="text-slate-800 m-2"
-      :icon="['fab', 'google']"
+      class="text-white m-2"
+      :icon="icon"
     />
-    <div class="title-div text-slate-800 font-bold">{{ title }}</div>
+    <div class="title-div text-white font-bold">{{ title }}</div>
   </div>
 </template>
 
@@ -16,7 +16,10 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'ButtonCompontent',
   props: {
-    title: String
+    title: String,
+    icon: {
+      type: Array
+    }
   }
 })
 </script>
