@@ -3,6 +3,7 @@
     <ButtonComponent
       class=""
       title="Sign in with google"
+      :icon="['fab', 'google']"
     />
   </div>
 </template>
@@ -18,4 +19,3 @@ export default defineComponent({
   }
 })
 </script>
-
