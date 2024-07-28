@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import RegisterationView from '../views/RegisterationView.vue'
-
+import NotFoundView from '@/views/NotFoundView.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -25,6 +25,15 @@ const routes: Array<RouteRecordRaw> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: RegisterationView
+  },
+
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: NotFoundView
   }
 ]
 
