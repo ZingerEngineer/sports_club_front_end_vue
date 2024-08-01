@@ -1,5 +1,7 @@
 <template>
-  <div class="home">
+  <div
+    class="home-wrapper w-full h-full flex flex-col items-center justify-center"
+  >
     <ButtonComponent
       class=""
       title="Sign in with google"

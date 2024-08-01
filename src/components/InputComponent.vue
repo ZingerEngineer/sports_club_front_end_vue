@@ -5,7 +5,7 @@
       class="block text-sm font-medium leading-6 text-white"
       >{{ label }}</label
     >
-    <div class="relative mt-2 rounded-md shadow-sm">
+    <div class="relative mt-1 rounded-md shadow-sm">
       <div
         class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
       ></div>
