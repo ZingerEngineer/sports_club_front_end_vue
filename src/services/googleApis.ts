@@ -1,4 +1,4 @@
-export const getGoogleUrl = () => {
+export const getGoogleURL = () => {
   const rootURL = 'https://accounts.google.com/o/oauth2/v2/auth'
   const URLOptions = {
     client_id: process.env.VUE_APP_CLIENT_ID_SECRET as string,
