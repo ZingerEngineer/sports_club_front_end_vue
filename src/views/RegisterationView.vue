@@ -70,23 +70,22 @@
     >
       <ButtonComponent
         type="anchor"
-        :href="getGoogleUrl()"
+        :href="getGoogleURL()"
         class="min-w-72"
         title="Sign in with google"
         :icon="['fab', 'google']"
       />
       <ButtonComponent
         class="min-w-72"
-        title="Sign in with twitter"
-        :icon="['fab', 'twitter']"
-      />
-      <ButtonComponent
-        class="min-w-72"
+        type="anchor"
+        :href="getFaceBookURL()"
         title="Sign in with facebook"
         :icon="['fab', 'facebook']"
       />
       <ButtonComponent
         class="min-w-72"
+        type="anchor"
+        :href="getGitHubURL()"
         title="Sign in with github"
         :icon="['fab', 'github']"
       />
@@ -98,7 +97,9 @@
 import { defineComponent } from 'vue'
 import ButtonComponent from '@/components/ButtonComponent.vue' // @ is an alias to /src
 import InputComponent from '@/components/InputComponent.vue'
-import { getGoogleUrl } from '@/services/googleApis'
+import { getGoogleURL } from '@/services/googleApis'
+import { getFaceBookURL } from '@/services/facebookApi'
+import { getGitHubURL } from '@/services/githubApi'
 
 export default defineComponent({
   name: 'RegisterationView',
@@ -106,6 +107,6 @@ export default defineComponent({
     ButtonComponent,
     InputComponent
   },
-  methods: { getGoogleUrl }
+  methods: { getGoogleURL, getFaceBookURL, getGitHubURL }
 })
 </script>
