@@ -20,17 +20,14 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { defineProps } from 'vue'
 
-export default defineComponent({
-  name: 'InputComponent',
-  props: {
-    label: String,
-    placeholder: String,
-    type: String,
-    name: String
-  }
+defineProps({
+  label: String,
+  placeholder: String,
+  type: String,
+  name: String
 })
 </script>
 

@@ -21,25 +21,12 @@
   </a>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'ButtonCompontent',
-  props: {
-    title: {
-      type: String,
-      default: () => 'Button title'
-    },
-    icon: {
-      type: Array,
-      default: () => []
-    },
-    type: {
-      type: String,
-      default: 'div'
-    }
-  }
+<script setup lang="ts">
+import { defineProps } from 'vue'
+defineProps({
+  type: String,
+  icon: Array,
+  title: String
 })
 </script>
 

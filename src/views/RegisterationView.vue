@@ -93,20 +93,10 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
 import ButtonComponent from '@/components/ButtonComponent.vue' // @ is an alias to /src
 import InputComponent from '@/components/InputComponent.vue'
 import { getGoogleURL } from '@/services/googleApis'
 import { getFaceBookURL } from '@/services/facebookApi'
 import { getGitHubURL } from '@/services/githubApi'
-
-export default defineComponent({
-  name: 'RegisterationView',
-  components: {
-    ButtonComponent,
-    InputComponent
-  },
-  methods: { getGoogleURL, getFaceBookURL, getGitHubURL }
-})
 </script>
