@@ -5,7 +5,7 @@
       class="block text-sm font-medium leading-6 text-white"
       >{{ label }}</label
     >
-    <div class="relative mt-2 rounded-md shadow-sm">
+    <div class="relative mt-1 rounded-md shadow-sm">
       <div
         class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
       ></div>
@@ -20,17 +20,14 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { defineProps } from 'vue'
 
-export default defineComponent({
-  name: 'InputComponent',
-  props: {
-    label: String,
-    placeholder: String,
-    type: String,
-    name: String
-  }
+defineProps({
+  label: String,
+  placeholder: String,
+  type: String,
+  name: String
 })
 </script>
 
